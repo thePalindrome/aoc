@@ -5,7 +5,8 @@ fn main() {
     for line in input.cycle() {
         acc += line.parse::<i64>().unwrap();
         if !vals.insert(acc) {
-            panic!("{}",acc);
+            println!("{}",acc);
+            return;
         }
     }
 }
