@@ -23,7 +23,7 @@ fn main() {
             height: wt.next().expect("").parse().unwrap()
         });
     }
-    let mut grid: [[u8; 1500]; 1500] = [[0; 1500]; 1500];
+    let mut grid: [[u8; 1000]; 1000] = [[0; 1000]; 1000];
     for i in &claims {
         for x in i.top..i.top+i.height {
             for y in i.left..i.left+i.width {
